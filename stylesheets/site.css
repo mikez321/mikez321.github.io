@@ -1,13 +1,26 @@
+:root {
+  --bg-color: black;
+  --text-color: white;
+  --text-color-alt-1: red;
+  --text-color-alt-2: white; }
+
 * {
   padding-top: 0.4em;
   padding-bottom: 0.4em; }
+
+.emphasize-1 {
+  text-shadow: 0em 0em red;
+  text-shadow: -0.2em 0.69em var(--text-color-alt-1); }
+
+.text {
+  color: white; }
 
 body {
   padding-top: 3%;
   margin-left: 5%;
   margin-right: 5%;
-  background-color: mediumblue;
-  color: white; }
+  background-color: var(--bg-color);
+  color: var(--text-color); }
 
 .left-upper {
   -webkit-box-sizing: border-box;
@@ -80,7 +93,7 @@ body {
   width: 100%;
   text-align: center;
   font-family: 'Lato', monospace;
-  font-size: 1.1vw; }
+  font-size: 1.3vw; }
 
 @media screen and (max-width: 800px) {
   .left-upper, .right-upper, .left-lower, .right-lower, .links {
@@ -88,23 +101,28 @@ body {
 
 .name {
   font-family: 'Major Mono Display', monospace;
-  font-size: 11vw; }
+  font-size: 11vw;
+  color: var(--text-color-alt-2); }
 
 .title {
   text-align: center;
   font-family: 'Major Mono Display', monospace;
-  font-size: 3vw; }
+  font-size: 3vw;
+  color: var(--text-color-alt-2); }
 
 .info {
   text-align: right;
   font-family: 'Lato', monospace;
-  font-size: 2.7vw; }
+  font-size: 2.7vw;
+  color: var(--text-color);
+  padding: 20px; }
 
 .mid-info-l {
-  padding-top: 1.5em;
+  padding-top: 1.7em;
   text-align: right;
   font-family: 'Lato', monospace;
-  font-size: 3vw; }
+  font-size: 3vw;
+  color: var(--text-color); }
 
 .mid-info-r-title {
   text-align: center;
@@ -114,11 +132,8 @@ body {
 .mid-info-r {
   text-align: justify;
   font-family: 'Major Mono Display', monospace;
-  font-size: 1.5vw; }
-
-.links {
-  font-family: 'Lato', monospace;
-  font-size: 1vw; }
+  font-size: 1.5vw;
+  color: var(--text-color); }
 
 .connect {
   text-align: left;
@@ -139,5 +154,5 @@ body {
           text-decoration-style: wavy; }
 
 a {
-  color: white;
+  color: var(--text-color);
   text-decoration: none; }
