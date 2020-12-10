@@ -1,7 +1,7 @@
 :root {
   --bg-color: black;
   --text-color: white;
-  --text-color-alt-1: red;
+  --text-color-alt-1: dodgerblue;
   --text-color-alt-2: white; }
 
 * {
@@ -97,7 +97,14 @@ body {
 
 @media screen and (max-width: 800px) {
   .left-upper, .right-upper, .left-lower, .right-lower, .links {
-    width: 100%; } }
+    width: 100%; }
+  body {
+    margin: 0;
+    padding: 0; }
+  .info {
+    text-decoration: underline;
+    -webkit-text-decoration-color: var(--text-color-alt-1);
+            text-decoration-color: var(--text-color-alt-1); } }
 
 .name {
   font-family: 'Major Mono Display', monospace;
@@ -118,7 +125,7 @@ body {
   padding: 20px; }
 
 .mid-info-l {
-  padding-top: 1.7em;
+  padding-top: 2.5em;
   text-align: right;
   font-family: 'Lato', monospace;
   font-size: 3vw;
